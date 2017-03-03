@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<body>
+  <b><p class="white" align="right"><a href="/userhomepage/<%=user.username%>">Home&nbsp;&nbsp;|&nbsp;&nbsp;
+  </a>&nbsp;&nbsp;<a href="/profile/<%=user.username%>">&nbsp;&nbsp;Portfolio&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+  &nbsp;&nbsp;<a href="/">&nbsp;&nbsp;Log out &nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p></b>
+
+
+<p>
+<hh>
+<b>
+Student Portfolio
+  </b>
+</hh>
+</p>
+<hh1>
+<b>
+My Portfolio
+</b>
+</hh1>
+<div>
+  <div>
+    <form class="animate form" action="/projectadd/<%=user.username%>" method="get">
+    <b>  <p align="left"><%=user.fullname%><br></br>
+      username : <%=user.username%><br></br>
+      email : <%=user.email%><br></br>
+</p></b>
+    <button class="green" type="submit" >Edit Portfolio</button>
+    </form>
+
+    <form class="animate form">
+    <p align="left">
+          <% Object.keys(user.portfolio).forEach(function(prop){%>
+          <%   if(user.portfolio[prop].title!=null){%>
+            <b>Title</b>  <%=user.portfolio[prop].title%> <br></br>
+            <b>URL</b>  <%=user.portfolio[prop].url%> <br></br>
+            ______________________________________________________
+              <%}});%>
+      </p>
+    </form>
+
+  </div>
+</div>
+<placeholder id="works"></placeholder>
+</body>
+</html>

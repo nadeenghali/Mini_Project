@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<body>
+  <b><p class="white" align="right"><a href="/userhomepage/<%=user.username%>">Home&nbsp;&nbsp;|&nbsp;&nbsp;
+  </a>&nbsp;&nbsp;<a href="/profile/<%=user.username%>">&nbsp;&nbsp;Portfolio&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+  &nbsp;&nbsp;<a href="/">&nbsp;&nbsp;Log out &nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p></b>
+
+<p >
+<hh>
+<b>
+  Student Portfolio
+  </b>
+</hh>
+</p>
+<hh1>
+<b>
+Add Project
+</b>
+</hh1>
+<div >
+  <div>
+    <form class="animate form" id="signup" method="post" action="/addWork/<%=user.username%>">
+      <input type="text" placeholder="title" name="title"/>
+      <input type="text" placeholder="url" name="url"/>
+
+
+      <button class="green" type="submit" value="Submit">Add</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

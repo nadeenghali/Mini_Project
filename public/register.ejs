@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<body>
+<p >
+<hh>
+<b>
+  Student Portfolio
+  </b>
+</hh>
+</p>
+<hh1>
+<b>
+Welcome
+</b>
+</hh1>
+<div class="login-page">
+  <div>
+    <form class="animate form" id="signup" method="post" action="/register">
+      <input type="text" placeholder="fullname" name="fullname"/>
+      <input type="text" placeholder="username" name="username"/>
+      <input type="password" placeholder="password" name="password"/>
+      <input type="text" placeholder="email address" name="email"/>
+
+
+   <div>
+    <table class="textfont" style="width:100%" >
+    <tr>
+    <td>&nbsp;</td>
+    <td><input type="radio" name="usertype" id="1" value=1 runat="server" Text="" AutoPostBack="True" />Student
+    </td>
+    <td><input type="radio" name="usertype" id="0" value=0 runat="server" Text="" AutoPostBack="True" />Other User</td>
+    </tr>
+    </table>
+    </div>
+
+      <button class="green" type="submit" value="Submit">create</button>
+      <p class="message">Already registered? <a id="si" href="/">Sign In</a></p>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

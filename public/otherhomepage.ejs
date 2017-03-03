@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<body>
+  <b><p class="white" align="right"><a href="/otherhomepage/<%=user.username%>">Home&nbsp;&nbsp;|&nbsp;&nbsp;
+  </a>&nbsp;&nbsp;<a href="/">&nbsp;&nbsp;Log out &nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p></b>
+
+<p>
+<hh>
+<b>
+Student Portfolio
+  </b>
+</hh>
+</p>
+<hh1>
+<b>
+ <%= user.fullname %>'s Home
+</b>
+</hh1>
+<div class="guest-page">
+  <div>
+    </form>
+    <form class="animate form">
+<p align="left"><% users.forEach(function(user){%>
+      <%=user.fullname%> <br></br>
+        <b>Title</b><br></br>
+
+      _______________________________________<br></br>
+      <%});%>
+
+</p>
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

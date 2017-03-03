@@ -1,0 +1,28 @@
+{
+  "name": "miniProject",
+  "version": "1.0.0",
+  "description": "Student Portfilio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "Nadeen Ghali",
+  "license": "ISC",
+  "dependencies":{
+    "passport":"*",
+    "passport-jwt":"*",
+    "express":"*",
+    "express-ejs":"*",
+    "express-ejs-layout":"*",
+    "express-validator":"*",
+    "express-messages":"*",
+    "express-session":"*",
+    "mongoose":"*",
+    "bcryptjs":"*",
+    "cors":"*",
+    "jsonwebtoken":"*",
+    "body-parser":"*"
+
+  }
+}
